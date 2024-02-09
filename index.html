@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>conversor de moedas</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">CURRENCY CONVERTER</h2>
+    <div class="select-currency1">
+    	<input type="number" name="input1" class="input1">
+	    <select name="currency1" class="currency1">
+	    	<option value="dolar">Dolar</option>
+	    	<option value="real">Real</option>
+	    	<option value="euro">Euro</option>
+	    	<option value="renminbi(Yuan)">Renminbi(Yuan)</option>
+	    	<option value="iene">Iene</option>
+	    	<option value="bitcoin">Bitcoin</option>
+	    	<option value="peso arg">Peso argentino</option>
+	    	<option value="Rublo">Rublo</option>
+	    </select>
+	  </div>
+	  <div class="country">
+	  	<div>
+	  	  Country/region: 
+	  	  <span class="coutry-name">USA</span>
+	  	</div>
+	  	
+	  	<div class="flag">
+        <img src="./img/usa.jpg">
+	  	</div>
+	  </div>
+
+	  <div class="select-currency2">
+	  	<div class="displayResult">0</div>
+	    <select name="currency2" class="currency2">
+	    	<option value="real">Real</option>
+	    	<option value="dolar">Dolar</option>  	
+	    	<option value="euro">Euro</option>
+	    	<option value="renminbi(Yuan)">Renminbi(Yuan)</option>
+	    	<option value="iene">Iene</option>
+	    	<option value="bitcoin">Bitcoin</option>
+	    	<option value="peso arg">Peso argentino</option>
+	    	<option value="Rublo">Rublo</option>
+	    </select>
+    </div>
+
+    <div class="country2">
+	  	<div>
+	  	  Country/region: 
+	  	  <span class="coutry-name2">Brazil</span>
+	  	</div>
+	  	
+	  	<div class="flag2">
+	  		<img src="./img/brazil.jpg">
+	  	</div>
+	  </div>
+
+    <button class="btn-convert">convert</button>
+  </div>
+</body>
+</html>
