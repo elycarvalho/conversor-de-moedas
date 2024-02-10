@@ -22,26 +22,35 @@ body{
 
 .select-currency1{
 	width: 280px;
+	height: 70px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	border: 1px solid blue;
 }
 
 .select-currency2{
 	width: 280px;
+	height: 70px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	border: 1px solid darkcyan;
 }
 
 select{
 	width: 130px;
+	height: 30px;
 	text-align: center;
 }
 
 img{
 	width: 35px;
 	height: 23px;
+}
+
+.input1{
+	height: 30px;
 }
 
 .country, .country2{
@@ -60,9 +69,11 @@ img{
 
 .displayResult{
 	width: 130px;
+	height: 30px;
 	border: 1px solid green;
 }
 
 .btn-convert{
 	width: 230px;
+	height: 35px;
 }
