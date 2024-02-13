@@ -10,6 +10,7 @@ body{
 }
 
 .container{
+	background-color: #E8F3D5;
 	margin: 20px auto;
 	width: 310px;
 	height: 400px;
@@ -17,14 +18,15 @@ body{
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-    border: 1px solid orange;
+    border: 1px solid #889A6F;
+    border-radius: 7px;
 }
 
 header{
 	width: 95%;
-	border: 1px solid pink;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 }
 
 .logo{
@@ -48,7 +50,20 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	border: 1px solid blue;
+}
+
+.arrow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1CA06C;
+	color: #E9BB51;
+	text-align: center;
+	width: 70px;
+	height: 60px;
+	font-size: 50px;
+	font-weight: bold;
+	border-radius: 10px;
 }
 
 .select-currency2{
@@ -57,7 +72,6 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	border: 1px solid darkcyan;
 }
 
 select{
@@ -86,20 +100,14 @@ img{
 	width: 130px;
 }
 
-
-
-.arrow{
-	border: 1px solid red;
-	font-size: 3rem;
-	font-weight: bold;
-}
-
 .displayResult{
+	background-color: #fff;
 	width: 130px;
 	height: 30px;
 	border: 1px solid green;
 	text-align: center;
 	padding-top: 5px;
+	border-radius: 5px;
 }
 
 .btn-convert{
