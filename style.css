@@ -20,6 +20,28 @@ body{
     border: 1px solid orange;
 }
 
+header{
+	width: 95%;
+	border: 1px solid pink;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.logo{
+	background-color: #E9BB51;
+	color: #A0781C;
+	text-align: center;
+	border: 3px solid goldenrod;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 2rem;
+}
+
+.title{
+	color: darkblue;
+}
+
 .select-currency1{
 	width: 280px;
 	height: 70px;
@@ -60,17 +82,24 @@ img{
 }
 
 .input1{
+	text-align: center;
 	width: 130px;
 }
 
-.title{
-	color: darkblue;
+
+
+.arrow{
+	border: 1px solid red;
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 .displayResult{
 	width: 130px;
 	height: 30px;
 	border: 1px solid green;
+	text-align: center;
+	padding-top: 5px;
 }
 
 .btn-convert{

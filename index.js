@@ -3,6 +3,10 @@ const currency1 = document.querySelector('.currency1')
 const currency2 = document.querySelector('.currency2')
 const displayResult = document.querySelector('.displayResult')
 const btnConvert = document.querySelector('.btn-convert')
+const flag1 = document.querySelector('.flag1')
+const flag2 = document.querySelector('.flag2')
+const countryName1 = document.querySelector('.country-name1')
+const countryName2 = document.querySelector('.country-name2')
 let currencyValue1 = 0
 let currencyValue2 = 0
 const currencyValues = [
@@ -17,6 +21,9 @@ const currencyValues = [
 ]
 
 btnConvert.addEventListener('click', () => {
+	if(input1.value == '') {
+		alert('Digite um valor a ser convertido.')
+	}
 	for (let i = 0; i < currencyValues.length; i++) {
 		if(currencyValues[i].currency == currency1.value){
 			currencyValue1 = currencyValues[i].value
@@ -44,3 +51,20 @@ function conversion2(sign){
 	displayResult.innerHTML = `${sign} ${result.toFixed(2)}`
 }
 
+currency1.addEventListener('change', () => {
+	for (let i = 0; i < currencyValues.length; i++) {
+		if(currencyValues[i].currency == currency1.value){
+			flag1.innerHTML = `<img src="./img/${currencyValues[i].region}.jpg"}>`
+			countryName1.innerHTML = currencyValues[i].region
+  	}
+  }
+})
+
+currency2.addEventListener('change', () => {
+	for (let i = 0; i < currencyValues.length; i++) {
+		if(currencyValues[i].currency == currency2.value){
+			flag2.innerHTML = `<img src="./img/${currencyValues[i].region}.jpg"}>`
+			countryName2.innerHTML = currencyValues[i].region
+  	}
+  }
+})
