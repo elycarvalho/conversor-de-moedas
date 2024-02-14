@@ -54,7 +54,7 @@ function conversion2(sign){
 currency1.addEventListener('change', () => {
 	for (let i = 0; i < currencyValues.length; i++) {
 		if(currencyValues[i].currency == currency1.value){
-			flag1.innerHTML = `<img src="./img/${currencyValues[i].region}.jpg"}>`
+			flag1.src = `./img/${currencyValues[i].region}.jpg`
 			countryName1.innerHTML = currencyValues[i].region
   	}
   }
@@ -63,7 +63,7 @@ currency1.addEventListener('change', () => {
 currency2.addEventListener('change', () => {
 	for (let i = 0; i < currencyValues.length; i++) {
 		if(currencyValues[i].currency == currency2.value){
-			flag2.innerHTML = `<img src="./img/${currencyValues[i].region}.jpg"}>`
+			flag2.src = `./img/${currencyValues[i].region}.jpg`
 			countryName2.innerHTML = currencyValues[i].region
   	}
   }
