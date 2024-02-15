@@ -10,7 +10,7 @@ const countryName2 = document.querySelector('.country-name2')
 let currencyValue1 = 0
 let currencyValue2 = 0
 const currencyValues = [
-  {currency:'real', value: 1, region:'Brazil', sign:'R$'},
+  {currency:'real', value: 1, region:'Brasil', sign:'R$'},
   {currency:'dolar', value:4.95, region: 'USA', sign:'$'},
   {currency:'euro', value:5.34, region: 'Europe', sign:'€'},
   {currency:'renminbi(Yuan)', value:0.70, region:'China', sign:'¥'},
@@ -44,11 +44,21 @@ btnConvert.addEventListener('click', () => {
 function conversion1(sign){
   let result = (input1.value * currencyValue1) * currencyValue2
 	displayResult.innerHTML = `${sign} ${result.toFixed(2)}`
+	if(result > 1000000000) {
+		displayResult.style.fontSize = '0.8rem'
+	}else{
+		displayResult.style.fontSize = '1rem'
+	}
 }
 
 function conversion2(sign){
   let result = (input1.value * currencyValue1) / currencyValue2
 	displayResult.innerHTML = `${sign} ${result.toFixed(2)}`
+	if(result > 1000000000) {
+		displayResult.style.fontSize = '0.75rem'
+	}else{
+		displayResult.style.fontSize = '1rem'
+	}
 }
 
 currency1.addEventListener('change', () => {

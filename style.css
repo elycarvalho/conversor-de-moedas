@@ -80,12 +80,12 @@ select{
 
 .input1{
 	text-align: center;
-	width: 130px;
+	width: 140px;
 }
 
 .displayResult{
 	background-color: #fff;
-	width: 130px;
+	width: 140px;
 	height: 33px;
 	border: 1px solid green;
 	text-align: center;
