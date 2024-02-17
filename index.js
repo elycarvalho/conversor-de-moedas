@@ -12,10 +12,10 @@ let currencyValue2 = 0
 const currencyValues = [
   {currency:'real', value: 1, region:'Brasil', sign:'R$'},
   {currency:'dolar', value:4.95, region: 'USA', sign:'$'},
-  {currency:'euro', value:5.34, region: 'Europe', sign:'€'},
+  {currency:'euro', value:5.34, region: 'Europa', sign:'€'},
   {currency:'renminbi(Yuan)', value:0.70, region:'China', sign:'¥'},
   {currency:'iene', value:0.034, region:'Japan', sign:'¥'},
-  {currency:'bitcoin', value:208770, region:'world', sign:'₿'},
+  {currency:'bitcoin', value:208770, region:'internacional', sign:'₿'},
   {currency:'peso arg', value:0.0060, region:'Argentina', sign:'$'},
   {currency:'Rublo', value:0.055, region:'Russia', sign:'₽'}
 ]
